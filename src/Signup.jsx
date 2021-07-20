@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input } from 'antd';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'antd';
 import { Button } from 'antd';
 import { Form } from 'antd';
