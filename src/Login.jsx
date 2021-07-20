@@ -4,8 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Card } from 'antd';
 import { Button } from 'antd';
 import { useHistory } from 'react-router-dom';
-import PageHead from './PageHead';
-import PageNav from './PageNav';
+
 
 
 const Login = () => {
@@ -30,7 +29,11 @@ const Login = () => {
       
         if (token) {
         
-          history.push('/country')
+          history.push({ 
+            pathname: '/country',
+            
+           })
+           
         }
         else{
           alert("No Authority");

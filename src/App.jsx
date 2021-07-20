@@ -6,7 +6,6 @@ import Login from "./Login";
 import { Home } from "./Home";
 import PageNav from "./PageNav";
 import PageHead from "./PageHead";
-import { auto } from "async";
 import DidIt from "./DidIt";
 const App = () => {
   const [isAuth, setAuth] = useState(localStorage.getItem("token")); 
@@ -24,7 +23,7 @@ const App = () => {
             <div className="col-md-10" style={{width:'100wh',padding:'0px'  }}>
             <PageHead setAuth={setAuth} />
             <div >
-            <Route  path="/country" component={Country }  />
+            <Route  path="/country" component={Country}  />
             <Route path="/home" component={Home} />
             <Route path="/didit" component={DidIt} />
             </div>

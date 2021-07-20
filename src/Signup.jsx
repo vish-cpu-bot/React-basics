@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Input } from 'antd';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { Card, Col, Row } from 'antd';
+import { Card } from 'antd';
 import { Button } from 'antd';
 import { Form } from 'antd';
 
@@ -16,10 +16,10 @@ const Signup = () => {
             cpass:'',
     })
 const hist=useHistory();
-
 const submit=()=>{
 
-            let old_value = JSON.parse(localStorage.getItem("data"))
+           
+    let old_value = JSON.parse(localStorage.getItem("data"))
 
             // console.log("onsubmit",old_value);
             if(old_value){

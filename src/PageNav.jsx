@@ -14,26 +14,16 @@ import {
   ContainerOutlined,
   MailOutlined,
 } from '@ant-design/icons';
-
-
-
-
-
  const PageNav = () => {
     return (
       <>
-      
       <Menu
           mode="inline"
           theme="dark"
           style={{height:'1000vh '}}
-
         >
           <Menu.Item key="1" icon={<PieChartOutlined />} >
-        
-       <NavLink activeClassName="active_class" to='/country' >Country</NavLink > 
-        
-
+       <NavLink activeClassName="active_class" to='/country'  >Country</NavLink > 
           </Menu.Item>
           <Menu.Item key="2" icon={<PieChartOutlined />} >
           <NavLink activeClassName="active_class" to='/home' >Home</NavLink > 
@@ -41,15 +31,8 @@ import {
           <Menu.Item key="3" icon={<PieChartOutlined />} >
           <NavLink activeClassName="active_class" to='/didit' >DidIt</NavLink > 
           </Menu.Item>   
-
-
-
-
-
         </Menu>
-
       </>
     )
-
     }
 export default PageNav
